@@ -48,6 +48,11 @@ def plot_boxplot(data):
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     st.pyplot(plt)
 
+    # Menambahkan interpretasi atau komentar setelah grafik
+    st.markdown("""
+    Terdapat pola musiman yang jelas dalam penggunaan sepeda, dengan puncak penggunaan terjadi pada musim panas dan gugur, sementara musim semi dan dingin menunjukkan penurunan signifikan. Pola ini dapat dimanfaatkan untuk perencanaan operasional, seperti meningkatkan armada dan fasilitas pada musim puncak serta merencanakan promosi untuk menarik pengguna di musim yang lebih sepi.
+    """)
+
 # Scatter Plot Function
 def plot_scatter(data):
     plt.figure(figsize=(10, 6))
@@ -59,6 +64,11 @@ def plot_scatter(data):
     plt.grid(color='gray', linestyle='--', linewidth=0.5, alpha=0.5)
     plt.tight_layout()
     st.pyplot(plt)
+
+    # Menambahkan interpretasi atau komentar setelah grafik
+    st.markdown("""
+    Terdapat hubungan yang signifikan antara suhu dan jumlah pengguna sepeda. Berdasarkan scatterplot dan garis regresi yang ditampilkan, terlihat bahwa seiring dengan meningkatnya suhu, jumlah pengguna sepeda juga cenderung meningkat. Hal ini menunjukkan bahwa suhu yang lebih tinggi mendorong lebih banyak orang untuk menggunakan sepeda, menciptakan hubungan positif antara kedua variabel tersebut. Meskipun terdapat variasi dalam data, tren umum ini cukup konsisten, mengindikasikan suhu sebagai faktor utama dalam mempengaruhi penggunaan sepeda.
+    """)
 
 # Bar Chart Function
 def plot_barchart(data):
@@ -90,6 +100,11 @@ def plot_barchart(data):
     plt.tight_layout()
     st.pyplot(plt)
 
+    # Menambahkan interpretasi atau komentar setelah grafik
+    st.markdown("""
+    Terdapat hubungan yang signifikan antara waktu dalam sehari dan jumlah pengguna sepeda. Penyewaan sepeda cenderung lebih tinggi pada pagi dan siang hari, dengan puncak tertinggi pada siang. Sebaliknya, dini hari menunjukkan jumlah penyewaan yang sangat rendah, dan malam sedikit lebih tinggi daripada dini hari. Pola ini menunjukkan bahwa waktu dalam sehari memengaruhi permintaan sepeda, dengan aktivitas yang lebih tinggi di pagi dan siang hari, sementara dini hari menjadi periode paling sepi.
+    """)
+    
 # Line Plot Function
 def plot_lineplot(data):
     monthly_data = data.groupby(['yr', 'mnth'])['cnt'].sum().reset_index()
@@ -107,6 +122,11 @@ def plot_lineplot(data):
     plt.legend()
     plt.tight_layout()
     st.pyplot(plt)
+
+    # Menambahkan interpretasi atau komentar setelah grafik
+    st.markdown("""
+    Terdapat perbedaan signifikan dalam jumlah penyewaan sepeda antara tahun pertama (2011) dan tahun kedua (2012). Pada tahun 2012, jumlah penyewaan sepeda lebih tinggi secara konsisten dibandingkan tahun 2011, terutama pada bulan-bulan puncak seperti musim panas dan gugur. Hal ini terlihat dari tren yang lebih tinggi pada garis yang mewakili tahun 2012 dalam line plot yang ditampilkan.
+    """)
 
 # RFM Analysis Function
 def calculate_rfm(data):
