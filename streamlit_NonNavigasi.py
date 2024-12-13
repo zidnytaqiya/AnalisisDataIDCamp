@@ -166,6 +166,17 @@ def plot_rfm(rfm):
     fig.suptitle('Rata-rata RFM Berdasarkan Musim', fontsize=16, color='white')
     st.pyplot(fig)
 
+    # Menambahkan interpretasi atau komentar setelah grafik
+    st.markdown("""
+    1. Musim Semi:
+       Pelanggan di musim ini baru saja melakukan transaksi terakhir (Recency = 0), tetapi total pengeluaran (Monetary) paling rendah, meskipun frekuensinya cukup tinggi.
+    2. Musim Panas:
+       Pelanggan di musim ini memiliki frekuensi transaksi yang sangat tinggi (Frequency = 4355) dan total pengeluaran yang signifikan (Monetary = 875227). Namun, pembelian terakhirnya sudah cukup lama (Recency = 194).
+    3. Musim Gugur:
+       Ini adalah musim terbaik secara keseluruhan, karena memiliki frekuensi tertinggi (Frequency = 4378) dan total pengeluaran tertinggi (Monetary = 963756). Namun, pelanggan sudah mulai jarang melakukan transaksi (Recency = 100).
+    4. Musim Dingin:
+       Musim ini memiliki pelanggan yang cukup aktif dengan Recency rendah (11 hari), meskipun frekuensinya adalah yang terendah (Frequency = 4167). Total pengeluaran di musim ini juga signifikan (Monetary = 787737).""")
+
 # Main Function
 def main():
     create_header()
