@@ -50,7 +50,7 @@ def plot_boxplot(data):
 
     # Menambahkan interpretasi atau komentar setelah grafik
     st.markdown("""
-    Berdasarkan grafik, terdapat hubungan yang signifikan antara waktu dalam sehari dan jumlah pengguna sepeda. Penyewaan sepeda cenderung lebih tinggi pada pagi dan siang hari, dengan puncak tertinggi pada siang. Sebaliknya, dini hari menunjukkan jumlah penyewaan yang sangat rendah, dan malam sedikit lebih tinggi daripada dini hari. Pola ini menunjukkan bahwa waktu dalam sehari memengaruhi permintaan sepeda, dengan aktivitas yang lebih tinggi di pagi dan siang hari, sementara dini hari menjadi periode paling sepi.
+    Terdapat pola musiman yang jelas dalam penggunaan sepeda, dengan puncak penggunaan terjadi pada musim panas dan gugur, sementara musim semi dan dingin menunjukkan penurunan signifikan. Pola ini dapat dimanfaatkan untuk perencanaan operasional, seperti meningkatkan armada dan fasilitas pada musim puncak serta merencanakan promosi untuk menarik pengguna di musim yang lebih sepi.
     """)
 
 # Scatter Plot Function
