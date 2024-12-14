@@ -21,7 +21,6 @@ def create_header():
         <div style="background-color:#AEC6CF;padding:10px;border-radius:10px;">
             <h1 style="color:#2F4F4F;text-align:center;">Dashboard Bike Sharing</h1>
             <p style="color:#2F4F4F;text-align:center;">Analisis dan Visualisasi Data Penggunaan Sepeda</p>
-            <p style="color:#2F4F4F;text-align:center;font-size:small;margin-top:1px;">Rahma Zidny Taqiya</p>
         </div>
         
         <div style="margin-top:20px;">
@@ -192,7 +191,7 @@ def create_footer():
         <hr style="border:1px solid #ccc;"/>
         <div style="margin-top:20px;">
             <p style="text-align:center;font-size:small;color:#2F4F4F;">
-                Dibuat oleh Rahma Zidny Taqiya | Sumber data: [Bike Sharing Dataset di Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset)
+                Dibuat oleh Rahma Zidny Taqiya | Sumber data: <a href="https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset" target="_blank">Bike Sharing Dataset di Kaggle</a>
             </p>
         </div>
         """,
