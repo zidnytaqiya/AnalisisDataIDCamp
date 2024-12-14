@@ -26,8 +26,10 @@ def create_header():
         <div style="margin-top:20px;">
             <p style="text-align:justify;">
                 Selamat datang di Dashboard Bike Sharing!🎉 Dalam proyek analisis data ini, saya menggunakan Bike Sharing Dataset yang tersedia di Kaggle🚲. Dataset ini menawarkan data menarik tentang perjalanan sepeda yang terekam secara otomatis, dengan berbagai atribut seperti waktu⏰, kondisi cuaca🌤️, serta jumlah pengguna sepeda👥, yang dibagi menjadi dua kategori: pengguna kasual dan pengguna terdaftar.
-                Awalnya, dataset ini terdiri dari 17.379 entri📊. Namun, setelah dilakukan proses data cleaning🧹 untuk mengatasi data yang tidak valid atau duplikat, jumlah entri yang tersisa adalah 17.135 data valid✅.
+                Awalnya, dataset ini terdiri dari 17.379 entri📊. Namun, setelah dilakukan proses data cleaning🧹 jumlah entri yang tersisa adalah 17.135 data valid✅.
                 Selanjutnya, saya akan menggali lebih dalam untuk menganalisis pola dan tren yang ada dalam data tersebut 🔍. Apa yang terjadi dengan jumlah pengguna sepeda di berbagai musim?🌧️☀️ Bagaimana waktu tertentu memengaruhi jumlah perjalanan?⏳ Saya akan menjawab pertanyaan-pertanyaan tersebut melalui eksplorasi data yang lebih interaktif dan mendalam!📈
+        
+        
         </div>
         """,
         unsafe_allow_html=True
