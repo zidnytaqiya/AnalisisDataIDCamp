@@ -22,9 +22,14 @@ def create_header():
             <h1 style="color:#2F4F4F;text-align:center;">Dashboard Bike Sharing</h1>
             <p style="color:#2F4F4F;text-align:center;">Analisis dan Visualisasi Data Penggunaan Sepeda</p>
         </div>
+        
+        <div style="margin-top:20px;">
+            <p>Dalam proyek analisis data ini, saya menggunakan <em>Bike Sharing Dataset</em> yang tersedia di Kaggle. Dataset ini mencatat informasi perjalanan sepeda secara otomatis, mencakup atribut seperti waktu, kondisi cuaca, serta jumlah pengguna sepeda, baik pengguna kasual maupun terdaftar. Awalnya, dataset ini terdiri dari 17.379 entri, namun setelah dilakukan proses <em>data cleaning</em>, jumlah data yang valid menjadi 17.135. Selanjutnya, analisis akan dilakukan berdasarkan beberapa pertanyaan utama untuk mengeksplorasi pola dan tren dalam data tersebut.</p>
+        </div>
         """,
         unsafe_allow_html=True
     )
+
 
 # Boxplot Function
 def plot_boxplot(data):
