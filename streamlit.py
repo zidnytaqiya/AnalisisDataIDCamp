@@ -26,11 +26,9 @@ def create_header():
         
         <div style="margin-top:20px;">
             <p style="text-align:justify;">
-                Selamat datang di **Dashboard Bike Sharing**! 🎉
-                
-                Dalam proyek analisis data ini, saya menggunakan **Bike Sharing Dataset** yang tersedia di Kaggle 🚲. Dataset ini menawarkan data menarik tentang perjalanan sepeda yang terekam secara otomatis, dengan berbagai atribut seperti **waktu** ⏰, **kondisi cuaca** 🌤️, serta **jumlah pengguna sepeda** 👥, yang dibagi menjadi dua kategori: pengguna kasual dan pengguna terdaftar.
-                Awalnya, dataset ini terdiri dari **17.379 entri** 📊. Namun, setelah dilakukan proses **data cleaning** 🧹 untuk mengatasi data yang tidak valid atau duplikat, jumlah entri yang tersisa adalah **17.135 data valid** ✅.
-                Selanjutnya, saya akan menggali lebih dalam untuk menganalisis pola dan tren yang ada dalam data tersebut 🔍. Apa yang terjadi dengan jumlah pengguna sepeda di berbagai musim? 🌧️☀️ Bagaimana waktu tertentu memengaruhi jumlah perjalanan? ⏳ Saya akan menjawab pertanyaan-pertanyaan tersebut melalui eksplorasi data yang lebih interaktif dan mendalam! 📈</p>
+                Selamat datang di Dashboard Bike Sharing!🎉 Dalam proyek analisis data ini, saya menggunakan Bike Sharing Dataset yang tersedia di Kaggle🚲. Dataset ini menawarkan data menarik tentang perjalanan sepeda yang terekam secara otomatis, dengan berbagai atribut seperti waktu⏰, kondisi cuaca🌤️, serta jumlah pengguna sepeda👥, yang dibagi menjadi dua kategori: pengguna kasual dan pengguna terdaftar.
+                Awalnya, dataset ini terdiri dari 17.379 entri📊. Namun, setelah dilakukan proses data cleaning🧹 untuk mengatasi data yang tidak valid atau duplikat, jumlah entri yang tersisa adalah 17.135 data valid✅.
+                Selanjutnya, saya akan menggali lebih dalam untuk menganalisis pola dan tren yang ada dalam data tersebut 🔍. Apa yang terjadi dengan jumlah pengguna sepeda di berbagai musim?🌧️☀️ Bagaimana waktu tertentu memengaruhi jumlah perjalanan?⏳ Saya akan menjawab pertanyaan-pertanyaan tersebut melalui eksplorasi data yang lebih interaktif dan mendalam!📈
         </div>
         """,
         unsafe_allow_html=True
@@ -194,7 +192,7 @@ def create_footer():
         <hr style="border:1px solid #ccc;"/>
         <div style="margin-top:20px;">
             <p style="text-align:center;font-size:small;color:#2F4F4F;">
-                Dibuat dengan ❤️ oleh Rahma Zidny Taqiya | Sumber data: Kaggle Bike Sharing Dataset
+                Dibuat oleh Rahma Zidny Taqiya | Sumber data: [Bike Sharing Dataset di Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset)
             </p>
         </div>
         """,
