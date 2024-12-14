@@ -25,7 +25,12 @@ def create_header():
         </div>
         
         <div style="margin-top:20px;">
-            <p style="text-align:justify;">Dalam proyek analisis data ini, saya menggunakan <em>Bike Sharing Dataset</em> yang tersedia di Kaggle. Dataset ini mencatat informasi perjalanan sepeda secara otomatis, mencakup atribut seperti waktu, kondisi cuaca, serta jumlah pengguna sepeda, baik pengguna kasual maupun terdaftar. Awalnya, dataset ini terdiri dari 17.379 entri, namun setelah dilakukan proses <em>data cleaning</em>, jumlah data yang valid menjadi 17.135. Selanjutnya, analisis akan dilakukan berdasarkan beberapa pertanyaan utama untuk mengeksplorasi pola dan tren dalam data tersebut.</p>
+            <p style="text-align:justify;">
+                Dalam proyek analisis data ini, saya menggunakan **Bike Sharing Dataset** yang tersedia di Kaggle 🚲. Dataset ini menawarkan data menarik tentang perjalanan sepeda yang terekam secara otomatis, dengan berbagai atribut seperti **waktu** ⏰, **kondisi cuaca** 🌤️, serta **jumlah pengguna sepeda** 👥, yang dibagi menjadi dua kategori: pengguna kasual dan pengguna terdaftar.
+
+                Awalnya, dataset ini terdiri dari **17.379 entri** 📊. Namun, setelah dilakukan proses **data cleaning** 🧹 untuk mengatasi data yang tidak valid atau duplikat, jumlah entri yang tersisa adalah **17.135 data valid** ✅.
+
+                Selanjutnya, saya akan menggali lebih dalam untuk menganalisis pola dan tren yang ada dalam data tersebut 🔍. Apa yang terjadi dengan jumlah pengguna sepeda di berbagai musim? 🌧️☀️ Bagaimana waktu tertentu memengaruhi jumlah perjalanan? ⏳ Saya akan menjawab pertanyaan-pertanyaan tersebut melalui eksplorasi data yang lebih interaktif dan mendalam! 📈</p>
         </div>
         """,
         unsafe_allow_html=True
@@ -55,7 +60,7 @@ def plot_boxplot(data):
 
     # Menambahkan interpretasi atau komentar setelah grafik
     st.markdown("""
-    Terdapat pola musiman yang jelas dalam penggunaan sepeda, dengan puncak penggunaan terjadi pada musim panas dan gugur, sementara musim semi dan dingin menunjukkan penurunan signifikan. Pola ini dapat dimanfaatkan untuk perencanaan operasional, seperti meningkatkan armada dan fasilitas pada musim puncak serta merencanakan promosi untuk menarik pengguna di musim yang lebih sepi.
+    Ya, terdapat pola musiman yang konsisten yang dapat dimanfaatkan untuk perencanaan operasional. **Musim panas** 🌞 dan **gugur** 🍂 menunjukkan jumlah pengguna sepeda yang tinggi, sehingga perlu **menambah armada** dan **fasilitas** seperti tempat parkir sepeda. Sebaliknya, **musim semi** 🌸 dan **musim dingin** ❄️ cenderung lebih sepi, jadi bisa dilakukan **promosi** atau **diskon** untuk menarik pengguna, serta **mengurangi armada** untuk efisiensi. Pola ini membantu merencanakan operasional yang lebih optimal sepanjang tahun!
     """)
 
 # Scatter Plot Function
@@ -72,7 +77,7 @@ def plot_scatter(data):
 
     # Menambahkan interpretasi atau komentar setelah grafik
     st.markdown("""
-    Terdapat hubungan yang signifikan antara suhu dan jumlah pengguna sepeda. Berdasarkan scatterplot dan garis regresi yang ditampilkan, terlihat bahwa seiring dengan meningkatnya suhu, jumlah pengguna sepeda juga cenderung meningkat. Hal ini menunjukkan bahwa suhu yang lebih tinggi mendorong lebih banyak orang untuk menggunakan sepeda, menciptakan hubungan positif antara kedua variabel tersebut. Meskipun terdapat variasi dalam data, tren umum ini cukup konsisten, mengindikasikan suhu sebagai faktor utama dalam mempengaruhi penggunaan sepeda.
+    Ya, terdapat hubungan yang signifikan antara **suhu** dan **jumlah pengguna sepeda**. Berdasarkan analisis scatterplot dan garis regresi, terlihat bahwa semakin tinggi suhu, semakin banyak orang yang menggunakan sepeda 🌡️🚲. Ini menunjukkan adanya **hubungan positif** antara suhu dan penggunaan sepeda, di mana suhu yang lebih tinggi cenderung mendorong orang untuk lebih banyak bersepeda. Meskipun ada variasi dalam data, tren umum ini tetap konsisten, menjadikan suhu sebagai faktor penting yang memengaruhi jumlah pengguna sepeda.
     """)
 
 # Bar Chart Function
@@ -107,7 +112,7 @@ def plot_barchart(data):
 
     # Menambahkan interpretasi atau komentar setelah grafik
     st.markdown("""
-    Terdapat hubungan yang signifikan antara waktu dalam sehari dan jumlah pengguna sepeda. Penyewaan sepeda cenderung lebih tinggi pada pagi dan siang hari, dengan puncak tertinggi pada siang. Sebaliknya, dini hari menunjukkan jumlah penyewaan yang sangat rendah, dan malam sedikit lebih tinggi daripada dini hari. Pola ini menunjukkan bahwa waktu dalam sehari memengaruhi permintaan sepeda, dengan aktivitas yang lebih tinggi di pagi dan siang hari, sementara dini hari menjadi periode paling sepi.
+    Ya, terdapat hubungan yang signifikan antara **waktu dalam sehari** dan **jumlah pengguna sepeda**. Penyewaan sepeda cenderung lebih tinggi pada **pagi** dan **siang** hari, dengan puncak tertinggi di siang hari 🌅☀️. Sebaliknya, **dini hari** menunjukkan jumlah penyewaan yang sangat rendah, dan **malam** sedikit lebih tinggi dibandingkan dini hari 🌙. Pola ini mengindikasikan bahwa **waktu** memengaruhi permintaan sepeda, dengan aktivitas yang lebih tinggi di pagi dan siang hari, sementara dini hari menjadi periode paling sepi.
     """)
     
 # Line Plot Function
@@ -130,7 +135,7 @@ def plot_lineplot(data):
 
     # Menambahkan interpretasi atau komentar setelah grafik
     st.markdown("""
-    Terdapat perbedaan signifikan dalam jumlah penyewaan sepeda antara tahun pertama (2011) dan tahun kedua (2012). Pada tahun 2012, jumlah penyewaan sepeda lebih tinggi secara konsisten dibandingkan tahun 2011, terutama pada bulan-bulan puncak seperti musim panas dan gugur. Hal ini terlihat dari tren yang lebih tinggi pada garis yang mewakili tahun 2012 dalam line plot yang ditampilkan.
+    Ya, terdapat perbedaan signifikan dalam jumlah penyewaan sepeda antara **tahun pertama (2011)** dan **tahun kedua (2012)**. Pada **tahun 2012**, jumlah penyewaan sepeda cenderung lebih tinggi secara konsisten dibandingkan tahun 2011, terutama pada bulan-bulan puncak seperti **musim panas** dan **gugur** 🌞🍂. Hal ini terlihat jelas dari tren yang lebih tinggi pada garis yang mewakili tahun 2012 dalam line plot, yang menunjukkan peningkatan jumlah penyewaan sepeda sepanjang tahun.
     """)
 
 # RFM Analysis Function
@@ -173,14 +178,14 @@ def plot_rfm(rfm):
 
     # Menambahkan interpretasi atau komentar setelah grafik
     st.markdown("""
-    1. Musim Semi:
-       Pelanggan di musim ini baru saja melakukan transaksi terakhir (Recency = 0), tetapi total pengeluaran (Monetary) paling rendah, meskipun frekuensinya cukup tinggi.
-    2. Musim Panas:
-       Pelanggan di musim ini memiliki frekuensi transaksi yang sangat tinggi (Frequency = 4355) dan total pengeluaran yang signifikan (Monetary = 875227). Namun, pembelian terakhirnya sudah cukup lama (Recency = 194).
-    3. Musim Gugur:
-       Ini adalah musim terbaik secara keseluruhan, karena memiliki frekuensi tertinggi (Frequency = 4378) dan total pengeluaran tertinggi (Monetary = 963756). Namun, pelanggan sudah mulai jarang melakukan transaksi (Recency = 100).
-    4. Musim Dingin:
-       Musim ini memiliki pelanggan yang cukup aktif dengan Recency rendah (11 hari), meskipun frekuensinya adalah yang terendah (Frequency = 4167). Total pengeluaran di musim ini juga signifikan (Monetary = 787737).""")
+        - **Musim Semi** 🌸: Pelanggan di musim ini baru saja melakukan transaksi terakhir, menunjukkan mereka baru berinteraksi. Meskipun sering melakukan transaksi, pengeluaran mereka relatif rendah, mengindikasikan bahwa pembelian mereka cenderung kecil meskipun frekuensinya tinggi.
+
+        - **Musim Panas** 🌞: Pelanggan di musim panas memiliki frekuensi transaksi yang sangat tinggi, meskipun transaksi terakhir mereka sudah cukup lama. Meskipun begitu, total pengeluaran mereka cukup besar ketika mereka bertransaksi, menunjukkan bahwa mereka menghabiskan banyak meski jarang berbelanja.
+
+        - **Musim Gugur** 🍂: Musim gugur adalah musim terbaik secara keseluruhan. Pelanggan di musim ini memiliki frekuensi transaksi dan total pengeluaran tertinggi, meskipun mereka mulai jarang bertransaksi. Hal ini menunjukkan loyalitas yang tinggi dan kecenderungan untuk menghabiskan lebih banyak ketika berbelanja.
+
+        - **Musim Dingin** ❄️: Pelanggan di musim dingin cukup aktif, dengan transaksi terakhir yang relatif baru. Meskipun frekuensinya terendah, pengeluaran mereka tetap signifikan, menunjukkan bahwa meskipun transaksi lebih sedikit, mereka menghabiskan lebih banyak setiap kali berbelanja.
+    """)
 
 # Main Function
 def main():
