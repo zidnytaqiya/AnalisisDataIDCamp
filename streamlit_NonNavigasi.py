@@ -185,16 +185,16 @@ def plot_rfm(rfm):
 def main():
     create_header()
 
-    st.subheader("Pengaruh Musim terhadap Penggunaan Sepeda")
+    st.subheader("Apakah ada pola musiman yang konsisten yang dapat dimanfaatkan untuk perencanaan operasional?")
     plot_boxplot(datafix)
 
-    st.subheader("Hubungan antara Suhu dan Jumlah Pengguna Sepeda")
+    st.subheader("Apakah terdapat hubungan yang signifikan antara suhu dan jumlah pengguna sepeda?")
     plot_scatter(datafix)
 
-    st.subheader("Rata-rata Penyewaan Sepeda Berdasarkan Waktu dalam Sehari")
+    st.subheader("Apakah terdapat hubungan yang signifikan antara waktu dalam sehari dan jumlah pengguna sepeda?")
     plot_barchart(datafix)
 
-    st.subheader("Tren Penyewaan Sepeda Berdasarkan Bulan di Tahun Pertama dan Kedua")
+    st.subheader("Apakah ada perbedaan signifikan dalam jumlah penyewaan sepeda antara tahun pertama (2011) dan tahun kedua (2012)?")
     plot_lineplot(datafix)
 
     st.subheader("Analisis RFM Berdasarkan Musim")
