@@ -5,7 +5,7 @@ Selamat datang di proyek analisis data **Bike Sharing Dataset**! ✨ Proyek ini 
 ## 🔗 Tautan Penting
 
 - **Dataset**: [Bike Sharing Dataset di Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset)
-- **Dashboard Interaktif**: [Bike Sharing Dashboard](https://bikesharingdashboard-zidnytaqiyaaa.streamlit.app)
+- **Dashboard Interaktif**: [Bike Sharing Dashboard](https://bikesharingdashboard-zidnytaqiyaa.streamlit.app/)
 
 ## 📊 Tentang Dataset
 
