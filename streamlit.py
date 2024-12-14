@@ -193,7 +193,7 @@ def create_footer():
         <hr style="border:1px solid #ccc;"/>
         <div style="margin-top:20px;">
             <p style="text-align:center;font-size:small;color:#2F4F4F;">
-                Dibuat oleh Rahma Zidny Taqiya | Sumber data: <a href="https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset" target="_blank">Bike Sharing Dataset di Kaggle</a>
+                Dibuat oleh Rahma Zidny Taqiya | Sumber data: <a href="https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset" target="_blank">Bike Sharing Dataset</a>
             </p>
         </div>
         """,
